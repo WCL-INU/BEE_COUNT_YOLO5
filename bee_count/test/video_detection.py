@@ -3,7 +3,7 @@ import cv2
 import os
 
 # 모델 로드
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='runs/train/bee_detect_light/weights/best.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='runs/train/bee_detect_light2/weights/best.pt', force_reload=True)
 model.conf = 0.3  # confidence threshold
 
 # 비디오 로드
@@ -38,7 +38,7 @@ while cap.isOpened():
     # 첫 프레임에서 출력 영상 초기화
     if out is None:
         h, w = frame.shape[:2]
-        out = cv2.VideoWriter('/home/soyun/bee/output_detected/video_0619/detected_video.mp4', fourcc, 24, (w, h))
+        out = cv2.VideoWriter('/home/soyun/bee/output_detected/video_0619/detected_video_light2.mp4', fourcc, 24, (w, h))
 
     out.write(frame)
 
