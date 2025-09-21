@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 
 # 모델 로드
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='runs/train/bee_detect_light2/weights/best.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='/home/soyun/BEE_COUNT_YOLO5/bee_count/yolov5/runs/train/bee_detect_light2/weights/best.pt', force_reload=True)
 model.conf = 0.3  # 이 아래 confidence는 무시
 
 # 이미지 폴더 경로
