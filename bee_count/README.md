@@ -1,11 +1,11 @@
 # 🐝 Bee Counting with YOLOv5/YOLOv8
-'=
+
 ## 📌 프로젝트 개요
 - **목표**: YOLOv5/YOLOv8을 활용하여 꿀벌을 탐지하고 개체 수를 정확하게 계수하는 모델 개발  
 - **연구 배경**: 양봉 산업에서 벌 개체 수 모니터링은 꿀벌 건강 상태와 생산성 파악에 핵심적임  
 - **주요 기여**: 데이터셋 구축부터 모델 학습 및 평가까지 엔드투엔드 파이프라인 개발
 
-![벌 이미지](results/bee_count.png)
+<img width="1197" height="513" alt="image" src="https://github.com/user-attachments/assets/1b6bc636-9195-4cf8-94dc-62e43b5b0c16" />
 
 ---
 
@@ -54,3 +54,5 @@ python train.py --img 640 --batch 16 --epochs 100 \
 ## 📊 실험 결과
 - **YOLOv5s 기준**: 높은 Precision 확보  
 - Recall 개선을 위해 **반복적인 데이터 증강 및 재학습** 진행  
+
+
